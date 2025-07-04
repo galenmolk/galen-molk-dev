@@ -13,61 +13,140 @@ body {
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   margin-bottom: 32px;
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.header-info {
+  flex: 1 1 250px;
 }
 
 .site-title {
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
 }
 
 .site-subtitle {
-  font-size: 1.2em;
-  color: #333;
+  font-size: 1em;
+  color: #666;
+  margin: 4px 0 12px 0;
 }
 
 .profile-picture {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: #ccc;
   border-radius: 50%;
-  margin: 16px auto;
+  flex-shrink: 0;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
 
 .about-me {
-  font-size: 0.95em;
+  font-size: 0.9em;
+  color: #444;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.contact-links {
   margin-top: 8px;
 }
 
 .contact-links a {
-  margin: 0 8px;
-  text-decoration: underline;
-  color: blue;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 2px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.contact-links a:hover {
+  background-color: #eee;
 }
 
 .project {
-  border-top: 1px solid #ddd;
-  padding-top: 24px;
-  margin-top: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 5px 20px 20px 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
 }
 
 .project-image {
+  max-height: 300px;
   width: 100%;
   height: auto;
-  margin-bottom: 12px;
+  object-fit: cover;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: block;
+  margin: 6px 0;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.project-image.contain {
+  object-fit: contain;
+  background-color: #f8f8f8;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .project-title {
   font-weight: 600;
   font-size: 1.1em;
-  margin-right: 8px;
+  color: #222;
 }
 
 .project-company {
   font-style: italic;
   font-size: 0.95em;
   color: #555;
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-company::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23555%22><path d=%22M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>') no-repeat center;
+  background-size: contain;
+  margin-right: 4px;
 }
 
 .project-description,
@@ -77,22 +156,42 @@ body {
 }
 
 .project-skills {
-  padding-left: 20px;
-  margin-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+  font-size: 0.9em;
+  color: #444;
+}
+
+.project-skills li {
+  background-color: #f2f2f2;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.project-skills li:last-child::after {
+  content: "";
 }
 
 .project-links a {
-  margin-right: 12px;
-  text-decoration: underline;
-  color: blue;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #222;
+  background-color: #f4f4f4;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
-.project-image {
-  width: 100%;
-  max-width: 350px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-  margin: 0 auto 12px auto;
+.project-links a:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
 }
+
