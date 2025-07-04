@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/galen-molk-dev/static/css/main.747b294a.css",
-    "main.js": "/galen-molk-dev/static/js/main.79429619.js",
+    "main.css": "/galen-molk-dev/static/css/main.269697a1.css",
+    "main.js": "/galen-molk-dev/static/js/main.3a36dc49.js",
     "index.html": "/galen-molk-dev/index.html",
-    "main.747b294a.css.map": "/galen-molk-dev/static/css/main.747b294a.css.map",
-    "main.79429619.js.map": "/galen-molk-dev/static/js/main.79429619.js.map"
+    "main.269697a1.css.map": "/galen-molk-dev/static/css/main.269697a1.css.map",
+    "main.3a36dc49.js.map": "/galen-molk-dev/static/js/main.3a36dc49.js.map"
   },
   "entrypoints": [
-    "static/css/main.747b294a.css",
-    "static/js/main.79429619.js"
+    "static/css/main.269697a1.css",
+    "static/js/main.3a36dc49.js"
   ]
 }
