@@ -1,25 +1,18 @@
-import React from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import { projects } from "./projectsData";
 
-const projects = [
-  {
-    name: "Space Tactics",
-    company: "Global Game Jam 2021",
-    description: "A turn-based tactics game built in Unity in under 48 hours.",
-    skills: ["Unity", "C#", "Game Design"],
-    links: [
-      { label: "Play", url: "https://example.com/spacetactics" }
-    ],
-    image: "https://via.placeholder.com/300x200"
-  }
-];
+const PublicUrl = process.env.PUBLIC_URL;
 
 const Project = ({ project }) => (
   <div className="project">
-    <img src={project.image} alt={project.name} className="project-image" />
-    <h3 className="project-title">{project.name}</h3>
-    <p className="project-company">{project.company}</p>
+    <div className="project-header">
+      <h3 className="project-title">{project.name}</h3>
+      <span className="project-company">{project.company}</span>
+    </div>
+    {project.image && (
+      <img src={`${process.env.PUBLIC_URL}/${project.image}`} alt={project.name} className="project-image" />
+    )}
     <p className="project-description">{project.description}</p>
     <ul className="project-skills">
       {project.skills.map((skill, i) => (
@@ -41,18 +34,23 @@ const App = () => (
     <header className="header">
       <h1 className="site-title">Galen Molk</h1>
       <p className="site-subtitle">Software Engineer</p>
-      <div className="profile-picture"></div>
-      <p className="about-me">[About me blurb goes here]</p>
+      <img src={`${process.env.PUBLIC_URL}/profile.webp`} alt="Profile" className="profile-picture" />
+      <p className="about-me">I’m an engineer and artist with a strong background in Unity and game development. I focus on building polished, performant, and accessible interactive experiences, with experience spanning edtech, fitness tech, and creative tools. I enjoy collaborating closely with design, art, and product teams to deliver thoughtful, engaging work.
+</p>
       <div className="contact-links">
-        <a href="mailto:galen@example.com">Email</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:galenmolk@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/galen-molk/" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
     </header>
 
     <main>
-      {projects.map((project, index) => (
+      {projects.map((project, index) => {
+        console.log(`${PublicUrl}/${project.image}`)
+        
+        return (
         <Project key={index} project={project} />
-      ))}
+      )
+      })}
     </main>
   </div>
 );
