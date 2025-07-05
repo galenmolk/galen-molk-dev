@@ -1,8 +1,13 @@
-export const bio = "Hi! My name's Galen. I'm an engineer with professional experience in games, connected fitness and edtech. " +
-"I've been a proud member of all sizes of teams, ranging from large companies to small indie projects, collaborating both shoulder-to-shoulder and remotely. " + 
+export const bio = [
+  "Hi! My name's Galen.",
+  "I'm an engineer with professional experience in games, connected fitness and edtech. " +
+"I've worked on teams of many different sizes, from large companies to small indie projects, seamlessly collaborating both remotely and shoulder-to-shoulder. " + 
 "I'm intentional about getting games and experiences built with love and skill into the lives of people everywhere. I'm passionate about writing powerful, " +
-"readable code that translates into a lasting positive experience for the player. When I'm not building, I can usually be found in the park with my pug, " + 
-"farming turnips in a Valheim server, or re-reading anything by Le Guin. Thanks for stopping by!";
+"readable code that translates into a lasting positive experience for the player.",
+"When I'm not building, I can usually be found walking in the park with my pug, " + 
+"farming turnips in a Valheim server, or re-reading anything by Le Guin.",
+"Thanks for stopping by."
+];
 
 export const projects = [
   {
@@ -57,7 +62,7 @@ export const projects = [
     skills: ["C# / Unity", "Save/Load System", "ScriptableObject Architecture", "Fungus"],
     links: [
       { label: "Steam Page", url: "https://store.steampowered.com/app/1546000/Kid_Detective/" },
-      { label: "JollyFranchers YouTube", url: "https://www.youtube.com/@jollyfranchers9071" }
+      { label: "JollyFranchers", url: "https://www.youtube.com/@jollyfranchers9071" }
     ],
     image: "kid.jpg"
   },

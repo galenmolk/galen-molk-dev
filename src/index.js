@@ -39,7 +39,11 @@ const App = () => (
       <p className="site-subtitle">Software Engineer</p>
     </div>
   </div>
-  <p className="about-me">{bio}</p>
+  <div className="about-me">
+  {bio.map((paragraph, index) => (
+    <p key={index}>{paragraph}</p>
+  ))}
+  </div>    
   <div className="contact-links">
     <a href="mailto:galenmolk@gmail.com" target="_blank" rel="noreferrer">Email</a>
     <a href="https://www.linkedin.com/in/galen-molk/" target="_blank" rel="noreferrer">LinkedIn</a>
