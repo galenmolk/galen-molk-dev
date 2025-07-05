@@ -41,7 +41,7 @@ const App = () => (
   </div>
   <p className="about-me">{bio}</p>
   <div className="contact-links">
-    <a href="mailto:galenmolk@gmail.com">Email</a>
+    <a href="mailto:galenmolk@gmail.com" target="_blank" rel="noreferrer">Email</a>
     <a href="https://www.linkedin.com/in/galen-molk/" target="_blank" rel="noreferrer">LinkedIn</a>
     <a href="https://github.com/galenmolk" target="_blank" rel="noreferrer">GitHub</a>
   </div>
