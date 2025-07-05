@@ -122,7 +122,6 @@ body {
 }
 
 .project-header {
-  background-color: #c7ac8d;
   padding: 0px 12px;
   border-radius: 8px;
   margin: 12px 0;
@@ -189,6 +188,7 @@ body {
 .project-links a {
   display: inline-block;
   padding: 8px 16px;
+  margin-top: 10px;
   margin-right: 10px;
   border: 1px solid #8a684d;
   border-radius: 8px;
