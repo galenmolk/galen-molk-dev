@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { projects } from "./projectsData";
+import { projects, bio } from "./projectsData";
 
 const Project = ({ project }) => (
   <div className="project">
@@ -39,7 +39,7 @@ const App = () => (
       <p className="site-subtitle">Software Engineer</p>
     </div>
   </div>
-  <p className="about-me">I’m an engineer and artist with a solid background in Unity and game development. I focus on crafting polished, reliable, and accessible interactive work, spanning edtech, fitness, and creative tools. I enjoy working closely with designers, artists, and product teams to deliver thoughtful, engaging results.</p>
+  <p className="about-me">{bio}</p>
   <div className="contact-links">
     <a href="mailto:galenmolk@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/galen-molk/" target="_blank" rel="noreferrer">LinkedIn</a>
