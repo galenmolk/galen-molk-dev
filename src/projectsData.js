@@ -98,6 +98,26 @@ export const projects = [
     containImage: true
   },
   {
+    name: "Tabletop Encounter Manager",
+    company: "Hexed Heroes",
+    description: "Designed and implemented an encounter management tool in Unity for Windows for the tabletop tactical game Hexed Heroes (in development). Features include a dynamic cooldown tracker across all enemies, an encounter library, support for managing unlimited enemies with unique stats and abilities, fullscreen or windowed mode, and support for saving, loading and defining presets for your encounters. Hexed Heroes team utilizes this tool for remote playtesting sessions in conjunction with Tabletop Simulator.",
+    skills: ["C# / Unity", "Tool Development", "UI/UX Design", "Persistence", "Windows"],
+    links: [
+      { label: "Download Page", url: "https://galenmolk.github.io/tactical-character-tracker/" }
+    ],
+    image: "encounters.png"
+  },
+  {
+    name: "Character Tracker",
+    company: "Hexed Heroes",
+    description: "Designed and implemented a character tracker Android app in Unity for the tabletop tactical game Hexed Heroes (in development). Features include a character library fetched dynamically from the web, a list of triggerable and passive abilities with cooldowns, a color-coded ability details inspector, and ongoing status effects. Hexed Heroes players use this for character tracking during playtest sessions.",
+    skills: ["C# / Unity", "Tool Development", "UI/UX Design", "Android", "Web Requests"],
+    links: [
+      { label: "Download Page", url: "https://galenmolk.github.io/tactical-character-tracker/" }
+    ],
+    image: "hexed.png"
+  },
+  {
     name: "Memory Game Clone",
     company: "Solo Project",
     description: "Programmed the core game loop for a classic memory matching game from scratch. Built a competitive AI opponent with a depreciating memory bank of known tiles and a branching decision tree for selecting moves.",
@@ -107,26 +127,6 @@ export const projects = [
     ],
     image: null,
     hide: true
-  },
-  {
-    name: "Olivia Wendel Music",
-    company: "Freelance",
-    description: "Solo-developed and co-designed a responsive website for Boston-based musician Olivia Wendel. Features background music respecting browser context, responsive CSS design for mobile, tablet, and desktop, and CSS animations.",
-    skills: ["React", "JavaScript", "CSS", "Responsive Design", "Web Development", "Web Audio"],
-    links: [
-      { label: "Visit the Live Site", url: "https://oliviawendelmusic.com/" }
-    ],
-    image: "olivia.png",
-  },
-  {
-    name: "Worm Tomb",
-    company: "Freelance",
-    description: "Built a responsive React website for artist and craftsman Forrest Fenske (Worm Tomb). Showcases his unique design and art requiring creative development solutions, plus optimized image galleries for performance across devices.",
-    skills: ["React", "JavaScript", "CSS", "Responsive Design", "Image Optimization"],
-    links: [
-      { label: "Visit the Live Site", url: "https://forrestfenske.com/" }
-    ],
-    image: "worm.png"
   },
   {
     name: "Web-based Canvas Editor Prototype",
@@ -148,5 +148,25 @@ export const projects = [
       { label: "Zack Davenport", ur: "https://www.mrdavenport.co/" }
     ],
     image: "dino.png",
+  },
+  {
+    name: "Olivia Wendel Music",
+    company: "Freelance",
+    description: "Solo-developed and co-designed a responsive website for Boston-based musician Olivia Wendel. Features background music respecting browser context, responsive CSS design for mobile, tablet, and desktop, and CSS animations.",
+    skills: ["React", "JavaScript", "CSS", "Responsive Design", "Web Development", "Web Audio"],
+    links: [
+      { label: "Visit the Live Site", url: "https://oliviawendelmusic.com/" }
+    ],
+    image: "olivia.png",
+  },
+  {
+    name: "Worm Tomb",
+    company: "Freelance",
+    description: "Built a responsive React website for artist and craftsman Forrest Fenske (Worm Tomb). Showcases his unique design and art requiring creative development solutions, plus optimized image galleries for performance across devices.",
+    skills: ["React", "JavaScript", "CSS", "Responsive Design", "Image Optimization"],
+    links: [
+      { label: "Visit the Live Site", url: "https://forrestfenske.com/" }
+    ],
+    image: "worm.png"
   }
 ];
