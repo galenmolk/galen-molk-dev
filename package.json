@@ -1,6 +1,6 @@
 {
   "name": "galen-molk-dev",
-  "homepage": "https://galenmolk.github.io/galen-molk-dev",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
