@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/www.galenmolk.com/static/css/main.74c1ac49.css",
-    "main.js": "/www.galenmolk.com/static/js/main.b7b53869.js",
-    "index.html": "/www.galenmolk.com/index.html",
-    "main.74c1ac49.css.map": "/www.galenmolk.com/static/css/main.74c1ac49.css.map",
-    "main.b7b53869.js.map": "/www.galenmolk.com/static/js/main.b7b53869.js.map"
+    "main.css": "./static/css/main.74c1ac49.css",
+    "main.js": "./static/js/main.082deb97.js",
+    "index.html": "./index.html",
+    "main.74c1ac49.css.map": "./static/css/main.74c1ac49.css.map",
+    "main.082deb97.js.map": "./static/js/main.082deb97.js.map"
   },
   "entrypoints": [
     "static/css/main.74c1ac49.css",
-    "static/js/main.b7b53869.js"
+    "static/js/main.082deb97.js"
   ]
 }
