@@ -7,7 +7,7 @@ export const projects = [
     name: "Animal Company",
     company: "Wooster Games",
     year: "2025-Present",
-    short: "Leading updates as an engineer & designer for Animal Company (#1 grossing Meta Quest title of 2025, 1.5 MAU, 500k peak DAU). Driving monster design and implementation, in-game camera, quest system features, live-ops workflows, tool development and performance initiatives.",
+    short: "Leading updates as an engineer & designer for Animal Company (#1 grossing Meta Quest 2025 title, 1.5 MAU, 500k peak DAU). Driving monster design and implementation, in-game camera, quest system features, live-ops workflows, tool development and performance initiatives.",
     skills: ["Project Leadership", "Game Design", "Multiplayer", "C# / Unity", "Live Ops", "Game Feel"],
     links: [
       { label: "Animal Company", url: "https://www.animalcompanyvr.com/" },
