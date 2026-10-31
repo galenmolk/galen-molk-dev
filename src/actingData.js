@@ -24,6 +24,7 @@ const baseCredits = {
   theatre: [
     { production: "Julius Caesar", role: "Cinna the Poet", company: "Theatre for a New Audience & OSF", director: "Shana Cooper" },
     { production: "The Odyssey", role: "Elpenor", company: "Oregon Shakespeare Festival", director: "Mary Zimmerman" },
+    { production: "The Crucible", role: "Cheever", company: "Bedlam", director: "Eric Tucker", note: "cancelled due to COVID-19" },
     { production: "The Exes", role: "Garrett Wright", company: "Theatre Row", director: "Magda S. Nyiri" },
     { production: "King John", role: "Hubert", company: "John Cullum Theatre", director: "James Jennings" },
     { production: "The Comedian's Tragedy", role: "The Messenger", company: "Access Theater", director: "Matthew Amendt" },
