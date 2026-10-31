@@ -17,6 +17,7 @@ export const links = {
   "Joseph Latimore": "https://www.imdb.com/name/nm0490225/",
   "Alex Morf": "https://www.imdb.com/name/nm3880670/",
   "Daniel Rester": "https://www.imdb.com/name/nm6936973/",
+  "Zachary Elkind": "https://www.zacharyelkind.com/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
