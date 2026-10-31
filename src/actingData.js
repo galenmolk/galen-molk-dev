@@ -28,6 +28,7 @@ export const links = {
   "James Jennings": "https://www.broadwayworld.com/people/James-Jennings/",
   "Ariel Francoeur": "https://www.arielfrancoeur.com/",
   "James Canfield": "https://tier5theatrecompany.com/james-cougar-canfield",
+  "Jeff Dailey": "https://www.jeffsdailey.com/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
