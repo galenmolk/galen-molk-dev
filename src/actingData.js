@@ -35,6 +35,7 @@ export const links = {
   "John Cullum Theatre": "https://www.broadwayworld.com/off-off-broadway/regionalshows/JOHN-CULLUM-THEATRE",
   "Access Theater": "https://www.accesstheater.com/",
   "American Theatre of Actors": "https://americantheatreofactors.org/",
+  "Dixon Place": "https://dixonplace.org/",
   "Bedlam TV": "https://bedlam.org/",
 };
 
