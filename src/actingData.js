@@ -13,6 +13,7 @@ export const links = {
   "Joshua Kellerman": "https://www.joshuamk.com/",
   "Forrest Fenske": "https://forrestfenske.com/",
   "Theresa May": "https://theresajmay.com/",
+  "Matthew Amendt": "https://www.matthewamendt.com/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
