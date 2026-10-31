@@ -1,13 +1,15 @@
-export const bio = [];
-
-export const tagline = "";
+export const bio = [
+  "I've spent six years shipping real-time, multiplayer and mobile software, mostly in Unity and C#. At Wooster Games I lead features on Animal Company, the top-grossing Meta Quest title of 2025. Before that I built gameplay systems and tools at Peloton and Hellosaurus.",
+  "Along the way I've written shaders, native plugins for iOS and Android, build pipelines and editor tools, and built React sites for freelance clients.",
+];
 
 export const projects = [
   {
     name: "Animal Company",
+    featured: true,
     company: "Wooster Games",
     year: "2025-Present",
-    short: "Leading updates as an engineer & designer for Animal Company (#1 grossing Meta Quest 2025 title, 1.5 MAU, 500k peak DAU). Driving monster design and implementation, in-game camera, quest system features, live-ops workflows, tool development and performance initiatives.",
+    short: "Leading updates as an engineer & designer for Animal Company (#1 grossing Meta Quest 2025 title, 1.5M MAU, 500k peak DAU). Driving monster design and implementation, in-game camera, quest system features, live-ops workflows, tool development and performance initiatives.",
     skills: ["Project Leadership", "Game Design", "Multiplayer", "C# / Unity", "Live Ops", "Game Feel"],
     links: [
       { label: "Animal Company", url: "https://www.animalcompanyvr.com/" },
@@ -17,6 +19,7 @@ export const projects = [
   },
   {
     name: "Unannounced Open-World Game",
+    featured: true,
     company: "Peloton",
     year: "2024—2025",
     short: "Open-world multiplayer cycling game for Android, in Unity. Architected the diegetic workout-guidance system, owned the tools and gameplay systems behind world-art and level-design, led performance work and mentored juniors.",
@@ -29,6 +32,7 @@ export const projects = [
   },
   {
     name: "Lanebreak",
+    featured: true,
     company: "Peloton",
     year: "2023—2024",
     short: "Peloton's immersive workout game on Bike and Tread. Ported the experience to Tread, shipped new features, built a level-validation rules engine in F#, and led incident response.",
@@ -41,6 +45,7 @@ export const projects = [
   },
   {
     name: "Hellosaurus Creator Studio",
+    featured: true,
     company: "Hellosaurus",
     year: "2021—2022",
     short: "Web-based interactive content editor in Unity. Led the architecture for an extensible modular UI, optimized aggressively for the web, and kept iteration tight against live user feedback.",
@@ -53,6 +58,7 @@ export const projects = [
   },
   {
     name: "Hellosaurus App",
+    featured: true,
     company: "Hellosaurus",
     year: "2020—2022",
     short: "Interactive story platform for kids 2–8, with 23,000+ daily families. Wrote shaders in CG/HLSL, built native plugins across Swift, Obj-C, Java and JS, and tuned the iOS build pipeline.",
