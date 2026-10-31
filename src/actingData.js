@@ -16,6 +16,7 @@ export const links = {
   "Matthew Amendt": "https://www.matthewamendt.com/",
   "Joseph Latimore": "https://www.imdb.com/name/nm0490225/",
   "Alex Morf": "https://www.imdb.com/name/nm3880670/",
+  "Daniel Rester": "https://www.imdb.com/name/nm6936973/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
