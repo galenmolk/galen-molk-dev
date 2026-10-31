@@ -3,7 +3,6 @@ import {
   gallery,
   headshot,
   recent,
-  reel,
   resume,
   skills,
   training,
@@ -84,10 +83,6 @@ const Acting = () => (
         </>
       )}
 
-      <h2>Reel</h2>
-      <div className="frame video">
-        <iframe src={reel.src} title={reel.title} allow="fullscreen; picture-in-picture" allowFullScreen />
-      </div>
 
       <h2>Credits</h2>
       <CreditTable caption="Theatre" rows={credits.theatre} />

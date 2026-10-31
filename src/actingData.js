@@ -1,8 +1,3 @@
-export const reel = {
-  title: "Galen Molk – Acting Reel",
-  src: "https://player.vimeo.com/video/442192311?h=64fda27ff1&byline=0&portrait=0&title=0&dnt=1",
-};
-
 export const headshot = "media/acting/galen-molk-headshot.webp";
 export const resume = "media/acting/galen-molk-resume.pdf";
 
