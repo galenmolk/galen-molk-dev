@@ -2,7 +2,7 @@ import {
   credits,
   gallery,
   headshot,
-  people,
+  links,
   recent,
   resume,
   skills,
@@ -13,28 +13,45 @@ import {
 import { asset, email } from "../site";
 import { ExternalLink, Footer, LinkRow } from "./Shared";
 
-const Director = ({ name }) =>
-  people[name] ? <ExternalLink href={people[name]}>{name}</ExternalLink> : name;
+// Splits "A & B" / "A, B" so each known name links on its own.
+const Linked = ({ text }) =>
+  text
+    ? text.split(/( & |, )/).map((part, i) =>
+        links[part] ? (
+          <a key={i} className="quiet" href={links[part]} target="_blank" rel="noreferrer">
+            {part}
+          </a>
+        ) : (
+          part
+        )
+      )
+    : null;
 
 const CreditTable = ({ caption, rows }) => (
-  <table className="credits">
-    <caption>{caption}</caption>
-    <tbody>
-      {rows.map((c) => (
-        <tr key={c.production}>
-          <td>
-            {c.production}
-            {c.note && <span className="note"> ({c.note})</span>}
-          </td>
-          <td>{c.role}</td>
-          <td>{c.company}</td>
-          <td>
-            dir. <Director name={c.director} />
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
+  <details className="credit-group">
+    <summary>
+      {caption} <span className="count">({rows.length})</span>
+    </summary>
+    <table className="credits">
+      <tbody>
+        {rows.map((c) => (
+          <tr key={c.production}>
+            <td>
+              {c.production}
+              {c.note && <span className="note"> ({c.note})</span>}
+            </td>
+            <td>{c.role}</td>
+            <td>
+              <Linked text={c.company} />
+            </td>
+            <td>
+              dir. <Linked text={c.director} />
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </details>
 );
 
 const Acting = () => (
@@ -64,7 +81,7 @@ const Acting = () => (
           <section className="feature">
             <h3>{upcoming.production}</h3>
             <p className="meta">
-              {upcoming.role} · {upcoming.company} · dir. <Director name={upcoming.director} />
+              {upcoming.role} · <Linked text={upcoming.company} /> · dir. <Linked text={upcoming.director} />
               <br />
               {upcoming.dates}
             </p>
@@ -83,7 +100,7 @@ const Acting = () => (
         </div>
         <h3>{recent.title}</h3>
         <p className="meta">
-          {recent.meta} · dir. <Director name={recent.director} />
+          {recent.meta} · dir. <Linked text={recent.director} />
         </p>
         <p>{recent.logline}</p>
         <p className="meta">

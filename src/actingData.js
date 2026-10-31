@@ -1,9 +1,22 @@
 export const headshot = "media/acting/galen-molk-headshot.webp";
 export const resume = "media/acting/galen-molk-resume.pdf";
 
-// Names listed here render as links wherever they appear as a director.
-export const people = {
+// Names listed here render as quiet links wherever they appear as a
+// director or company. Compound companies ("A & B") are matched per part.
+export const links = {
   "Jeff Musillo": "https://www.imdb.com/name/nm2298002/",
+  "Shana Cooper": "https://www.shanacooper.com/",
+  "Mary Zimmerman": "https://www.goodmantheatre.org/artists/mary-zimmerman/",
+  "Eric Tucker": "https://www.broadwayworld.com/people/Eric-Tucker/",
+  "Anthony Jones": "https://www.imdb.com/name/nm6464821",
+  "Louis Rocky Bacigalupo": "https://www.louisrockybacigalupo.com/",
+  "Joshua Kellerman": "https://www.joshuamk.com/",
+  "Forrest Fenske": "https://forrestfenske.com/",
+  "Theatre for a New Audience": "https://www.tfana.org/",
+  "Oregon Shakespeare Festival": "https://www.osfashland.org/",
+  OSF: "https://www.osfashland.org/",
+  Bedlam: "https://bedlam.org/",
+  "Bedlam TV": "https://bedlam.org/",
 };
 
 const baseCredits = {

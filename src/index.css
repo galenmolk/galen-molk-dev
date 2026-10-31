@@ -152,12 +152,22 @@ ul { list-style: none; margin: 0; padding: 0; }
 .credits td:nth-child(2) { width: 20%; }
 .credits td:nth-child(3) { width: 28%; }
 .training td:nth-child(1) { width: 40%; }
-.credits caption {
-  text-align: left;
+.training td:nth-child(2) { width: 60%; }
+.credit-group + .credit-group { margin-top: var(--s3); }
+.credit-group summary {
+  cursor: pointer;
   font-weight: 600;
-  padding-bottom: var(--s2);
+  padding: var(--s1) 0;
 }
-.credits + .credits { margin-top: var(--s5); }
+.credit-group summary .count { font-weight: 400; color: var(--muted); }
+.credit-group[open] summary .count { display: none; }
+.credit-group[open] .credits { margin: var(--s2) 0 var(--s4); }
+
+a.quiet {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+}
+a.quiet:hover { text-decoration-color: currentColor; }
 .credits td {
   padding: var(--s2) var(--s3) var(--s2) 0;
   border-top: 1px solid var(--rule);
