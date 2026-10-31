@@ -19,6 +19,7 @@ export const links = {
   "Daniel Rester": "https://www.imdb.com/name/nm6936973/",
   "Zachary Elkind": "https://www.zacharyelkind.com/",
   "Lue Douthit": "https://playonshakespeare.org/person/lue-douthit/",
+  "Holly L. Derr": "https://hollyderr.com/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
