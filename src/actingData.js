@@ -17,6 +17,7 @@ export const links = {
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
   Bedlam: "https://bedlam.org/",
+  "Theatre Row": "https://bfany.org/theatre-row/",
   "Bedlam TV": "https://bedlam.org/",
 };
 
