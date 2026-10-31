@@ -37,6 +37,13 @@ export const links = {
   "Access Theater": "https://www.accesstheater.com/",
   "American Theatre of Actors": "https://americantheatreofactors.org/",
   "Dixon Place": "https://dixonplace.org/",
+  "The Plaxall Gallery": "https://culturelablic.org/",
+  "Theater for the New City": "https://theaterforthenewcity.net/",
+  "Millbrook Playhouse": "https://millbrookplayhouse.net/",
+  "Ashland New Plays Festival": "https://ashlandnewplays.org/",
+  "Z Below": "https://www.zspace.org/",
+  "Playwrights Horizons": "https://playwrightshorizons.org/",
+  "Westchester Collaborative Theater": "https://www.wctheater.org/",
   "Bedlam TV": "https://bedlam.org/",
 };
 
