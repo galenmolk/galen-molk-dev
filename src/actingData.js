@@ -18,6 +18,7 @@ export const links = {
   "Alex Morf": "https://www.imdb.com/name/nm3880670/",
   "Daniel Rester": "https://www.imdb.com/name/nm6936973/",
   "Zachary Elkind": "https://www.zacharyelkind.com/",
+  "Lue Douthit": "https://playonshakespeare.org/person/lue-douthit/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
