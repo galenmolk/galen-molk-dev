@@ -1,11 +1,12 @@
 :root {
-  --bg: #121614;
-  --surface: #1a1f1c;
-  --text: #e3e5df;
-  --muted: #9ba59e;
-  --rule: #2e3631;
-  --accent: #9cc58a;
-  --focus: #7fb0cf;
+  --bg: #111111;
+  --surface: #1a1a1a;
+  --text: #dddddd;
+  --muted: #999999;
+  --rule: #333333;
+  --accent: #6f9fff;
+  --visited: #b39ddb;
+  --focus: #6f9fff;
   --serif: "Source Serif 4", Charter, "Iowan Old Style", Georgia, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --s1: .25rem; --s2: .5rem; --s3: 1rem; --s4: 1.5rem;
@@ -46,6 +47,7 @@ a {
   transition: text-decoration-color .12s;
 }
 a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+a:visited:not(.quiet) { color: var(--visited); }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
 
 .meta, figcaption { font: .875rem/1.5 var(--sans); color: var(--muted); }
