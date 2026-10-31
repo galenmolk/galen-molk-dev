@@ -14,6 +14,7 @@ export const links = {
   "Forrest Fenske": "https://forrestfenske.com/",
   "Theresa May": "https://theresajmay.com/",
   "Matthew Amendt": "https://www.matthewamendt.com/",
+  "Joseph Latimore": "https://www.imdb.com/name/nm0490225/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
