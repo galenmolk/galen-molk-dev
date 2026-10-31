@@ -5,7 +5,6 @@ import {
   links,
   recent,
   resume,
-  training,
   upcoming,
   upcomingIsOpen,
 } from "../actingData";
@@ -113,19 +112,6 @@ const Acting = () => (
       <CreditTable caption="Staged readings" rows={credits.readings} />
       <CreditTable caption="Film" rows={credits.film} />
       <CreditTable caption="Television" rows={credits.tv} />
-
-      <h2>Training</h2>
-      <table className="credits training">
-        <tbody>
-          {training.map(([area, detail]) => (
-            <tr key={area}>
-              <td>{area}</td>
-              <td>{detail}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-
 
       <h2>Production photos</h2>
       <div className="gallery">

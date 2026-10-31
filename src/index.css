@@ -150,8 +150,6 @@ ul { list-style: none; margin: 0; padding: 0; }
 .credits td:nth-child(1) { width: 32%; }
 .credits td:nth-child(2) { width: 20%; }
 .credits td:nth-child(3) { width: 28%; }
-.training td:nth-child(1) { width: 40%; }
-.training td:nth-child(2) { width: 60%; }
 .credit-group + .credit-group { margin-top: var(--s3); }
 .credit-group summary {
   cursor: pointer;
@@ -173,7 +171,6 @@ a.quiet:hover { text-decoration-color: currentColor; }
   vertical-align: top;
 }
 .credits td:first-child { font-style: italic; }
-.training td:first-child { font-style: normal; color: var(--text); }
 .credits .note { font: .875rem var(--serif); font-style: normal; color: var(--muted); }
 .credits td:not(:first-child) { color: var(--muted); }
 @media (max-width: 40rem) {

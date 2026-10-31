@@ -73,15 +73,6 @@ export const gallery = [
   { src: "gm12.webp", caption: "The Orange Cheddar Debacle" },
 ].map((g) => ({ ...g, src: `media/acting/gallery/${g.src}` }));
 
-export const training = [
-  ["BFA, Theatre Arts", "Southern Oregon University, summa cum laude"],
-  ["Acting", "Jackie Apodaca, Jim Edmondson, Scott Kaiser, Jonathan Drahos"],
-  ["On-camera", "Heidi Marshall, Terri McMahon, Greg Eliason"],
-  ["Movement, clown, mask, devised", "James Donlon"],
-  ["Stage combat (broadsword, hand-to-hand)", "U. Jonathan Toppo"],
-  ["Voice, dialects, IPA", "Kaitlin Henderson, Rebecca Clark Carey"],
-  ["Singing", "Madeline Abel-Kerns"],
-];
 
 
 export const recent = {
