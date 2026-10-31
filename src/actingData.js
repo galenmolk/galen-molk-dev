@@ -22,6 +22,7 @@ export const links = {
   "Holly L. Derr": "https://hollyderr.com/",
   "Jackie Apodaca": "https://ashlandnewplays.org/director/jackie-apodaca-director/",
   "Lyam Gabel": "https://lyambgabel.com/",
+  "Justy Kosek": "https://www.justykosek.com/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
