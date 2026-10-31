@@ -12,6 +12,7 @@ export const links = {
   "Louis Rocky Bacigalupo": "https://www.louisrockybacigalupo.com/",
   "Joshua Kellerman": "https://www.joshuamk.com/",
   "Forrest Fenske": "https://forrestfenske.com/",
+  "Theresa May": "https://theresajmay.com/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
