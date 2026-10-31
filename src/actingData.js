@@ -20,6 +20,7 @@ export const links = {
   "Zachary Elkind": "https://www.zacharyelkind.com/",
   "Lue Douthit": "https://playonshakespeare.org/person/lue-douthit/",
   "Holly L. Derr": "https://hollyderr.com/",
+  "Jackie Apodaca": "https://ashlandnewplays.org/director/jackie-apodaca-director/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
