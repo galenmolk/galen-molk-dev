@@ -27,6 +27,7 @@ export const links = {
   "Magda S. Nyiri": "https://www.broadwayworld.com/people/Magda-S-Nyiri/",
   "James Jennings": "https://www.broadwayworld.com/people/James-Jennings/",
   "Ariel Francoeur": "https://www.arielfrancoeur.com/",
+  "James Canfield": "https://tier5theatrecompany.com/james-cougar-canfield",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
