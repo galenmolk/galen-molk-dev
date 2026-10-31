@@ -8,7 +8,7 @@ export const projects = [
     name: "Animal Company",
     featured: true,
     company: "Wooster Games",
-    year: "2025-Present",
+    year: "2025–present",
     short: "Leading updates as an engineer & designer for Animal Company (#1 grossing Meta Quest 2025 title, 1.5M MAU, 500k peak DAU). Driving monster design and implementation, in-game camera, quest system features, live-ops workflows, tool development and performance initiatives.",
     skills: ["Project Leadership", "Game Design", "Multiplayer", "C# / Unity", "Live Ops", "Game Feel"],
     links: [
@@ -21,7 +21,7 @@ export const projects = [
     name: "Unannounced Open-World Game",
     featured: true,
     company: "Peloton",
-    year: "2024—2025",
+    year: "2024–2025",
     short: "Open-world multiplayer cycling game for Android, in Unity. Architected the diegetic workout-guidance system, owned the tools and gameplay systems behind world-art and level-design, led performance work and mentored juniors.",
     skills: ["C# / Unity", "Networking", "Performance", "Tools", "Gameplay"],
     links: [
@@ -34,7 +34,7 @@ export const projects = [
     name: "Lanebreak",
     featured: true,
     company: "Peloton",
-    year: "2023—2024",
+    year: "2023–2024",
     short: "Peloton's immersive workout game on Bike and Tread. Ported the experience to Tread, shipped new features, built a level-validation rules engine in F#, and led incident response.",
     skills: ["C# / Unity", "F#", "Multithreading", "CI/CD"],
     links: [
@@ -47,7 +47,7 @@ export const projects = [
     name: "Hellosaurus Creator Studio",
     featured: true,
     company: "Hellosaurus",
-    year: "2021—2022",
+    year: "2021–2022",
     short: "Web-based interactive content editor in Unity. Led the architecture for an extensible modular UI, optimized aggressively for the web, and kept iteration tight against live user feedback.",
     skills: ["C# / Unity", "Architecture", "Modular UI", "Web"],
     links: [
@@ -60,7 +60,7 @@ export const projects = [
     name: "Hellosaurus App",
     featured: true,
     company: "Hellosaurus",
-    year: "2020—2022",
+    year: "2020–2022",
     short: "Interactive story platform for kids 2–8, with 23,000+ daily families. Wrote shaders in CG/HLSL, built native plugins across Swift, Obj-C, Java and JS, and tuned the iOS build pipeline.",
     skills: ["C# / Unity", "Shaders", "Addressables", "Native Plugins", "iOS"],
     links: [
