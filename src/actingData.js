@@ -6,7 +6,7 @@ export const reel = {
 export const headshot = "media/acting/galen-molk-headshot.webp";
 export const resume = "media/acting/galen-molk-resume.pdf";
 
-export const credits = {
+const baseCredits = {
   theatre: [
     { production: "Julius Caesar", role: "Cinna the Poet", company: "Theatre for a New Audience & OSF", director: "Shana Cooper" },
     { production: "The Odyssey", role: "Elpenor", company: "Oregon Shakespeare Festival", director: "Mary Zimmerman" },
@@ -19,7 +19,6 @@ export const credits = {
     { production: "To Live in Peace", role: "The Drunk", company: "Theater for the New City", director: "Claudine Brantley" },
     { production: "An Act of God", role: "Michael", company: "Millbrook Playhouse", director: "Adam Knight" },
     { production: "Footlight Frenzy", role: "Benny Dibble", company: "Millbrook Playhouse", director: "Nick Brennan" },
-    { production: "The Diary of Anne Frank", role: "Mr. Kraler", company: "The Very Little Theatre", director: "Theresa May" },
   ],
   readings: [
     { production: "Richard II", role: "Mowbray, Green", company: "Bedlam", director: "Zachary Elkind" },
@@ -73,3 +72,36 @@ export const training = [
 
 export const skills =
   "Xaphoon, guitar, piano, singer-songwriter (folk), street skateboarding, dialects (Dublin, Alabama, London and more), horseback riding, stage combat, video editing.";
+
+export const recent = {
+  title: "Get the Picture",
+  meta: "Short film · 2025 · 10 min · Lead · dir. Jeff Musillo",
+  logline:
+    "When a celebrated actor becomes consumed by body dysmorphia, a chance encounter with a fan pushes him into a psychological spiral, blurring the lines between his real life and the violent role he's playing.",
+  src: "https://player.vimeo.com/video/1114953356?byline=0&portrait=0&title=0&dnt=1",
+  url: "https://vimeo.com/1114953356",
+};
+
+export const upcoming = {
+  production: "The Diary of Anne Frank",
+  role: "Mr. Kraler",
+  company: "The Very Little Theatre",
+  director: "Theresa May",
+  dates: "Jan 22 – Feb 7, 2027",
+  adaptation: "Adapted by Wendy Kesselman from the play by Frances Goodrich and Albert Hackett.",
+  url: "https://thevlt.com/the-diary-of-anne-frank/",
+  closes: "2027-02-07",
+};
+
+// After closing night the production drops out of "Upcoming" and joins the
+// theatre credits, so nothing needs editing when it closes.
+export const upcomingIsOpen = (now = new Date()) =>
+  now <= new Date(`${upcoming.closes}T23:59:59`);
+
+const { production, role, company, director } = upcoming;
+export const credits = {
+  ...baseCredits,
+  theatre: upcomingIsOpen()
+    ? baseCredits.theatre
+    : [{ production, role, company, director }, ...baseCredits.theatre],
+};

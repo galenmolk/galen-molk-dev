@@ -1,6 +1,17 @@
-import { credits, gallery, headshot, reel, resume, skills, training } from "../actingData";
+import {
+  credits,
+  gallery,
+  headshot,
+  recent,
+  reel,
+  resume,
+  skills,
+  training,
+  upcoming,
+  upcomingIsOpen,
+} from "../actingData";
 import { asset, email } from "../site";
-import { Footer, LinkRow } from "./Shared";
+import { ExternalLink, Footer, LinkRow } from "./Shared";
 
 const CreditTable = ({ caption, rows }) => (
   <table className="credits">
@@ -42,6 +53,37 @@ const Acting = () => (
     />
 
     <main>
+      <h2>Recent work</h2>
+      <section className="feature">
+        <div className="frame video">
+          <iframe src={recent.src} title={`${recent.title} (short film)`} allow="fullscreen; picture-in-picture" allowFullScreen />
+        </div>
+        <h3>{recent.title}</h3>
+        <p className="meta">{recent.meta}</p>
+        <p>{recent.logline}</p>
+        <p className="meta">
+          <ExternalLink href={recent.url}>Watch on Vimeo</ExternalLink>
+        </p>
+      </section>
+
+      {upcomingIsOpen() && (
+        <>
+          <h2>Upcoming</h2>
+          <section className="feature">
+            <h3>{upcoming.production}</h3>
+            <p className="meta">
+              {upcoming.role} · {upcoming.company} · dir. {upcoming.director}
+              <br />
+              {upcoming.dates}
+            </p>
+            <p>{upcoming.adaptation}</p>
+            <p className="meta">
+              <ExternalLink href={upcoming.url}>Production page</ExternalLink>
+            </p>
+          </section>
+        </>
+      )}
+
       <h2>Reel</h2>
       <div className="frame video">
         <iframe src={reel.src} title={reel.title} allow="fullscreen; picture-in-picture" allowFullScreen />

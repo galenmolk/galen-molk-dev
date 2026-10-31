@@ -182,6 +182,10 @@ ul { list-style: none; margin: 0; padding: 0; }
 .gallery figcaption { margin-top: var(--s2); }
 @media (max-width: 30rem) { .gallery { columns: 1; } }
 
+.feature h3 { margin: var(--s3) 0 var(--s1); font-style: italic; }
+.feature .meta { margin: 0 0 var(--s2); }
+.feature p:not(.meta) { font-size: 1rem; margin-top: var(--s2); }
+
 /* Footer */
 
 .site-footer { margin-top: var(--s8); }
