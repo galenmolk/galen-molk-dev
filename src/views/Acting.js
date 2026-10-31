@@ -58,21 +58,6 @@ const Acting = () => (
     />
 
     <main>
-      <h2>Recent work</h2>
-      <section className="feature">
-        <div className="frame video">
-          <iframe src={recent.src} title={`${recent.title} (short film)`} allow="fullscreen; picture-in-picture" allowFullScreen />
-        </div>
-        <h3>{recent.title}</h3>
-        <p className="meta">
-          {recent.meta} · dir. <Director name={recent.director} />
-        </p>
-        <p>{recent.logline}</p>
-        <p className="meta">
-          <ExternalLink href={recent.url}>Watch on Vimeo</ExternalLink>
-        </p>
-      </section>
-
       {upcomingIsOpen() && (
         <>
           <h2>Upcoming</h2>
@@ -90,6 +75,21 @@ const Acting = () => (
           </section>
         </>
       )}
+
+      <h2>Recent work</h2>
+      <section className="feature">
+        <div className="frame video">
+          <iframe src={recent.src} title={`${recent.title} (short film)`} allow="fullscreen; picture-in-picture" allowFullScreen />
+        </div>
+        <h3>{recent.title}</h3>
+        <p className="meta">
+          {recent.meta} · dir. <Director name={recent.director} />
+        </p>
+        <p>{recent.logline}</p>
+        <p className="meta">
+          <ExternalLink href={recent.url}>Watch on Vimeo</ExternalLink>
+        </p>
+      </section>
 
 
       <h2>Credits</h2>
