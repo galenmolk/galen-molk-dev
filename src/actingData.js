@@ -24,6 +24,7 @@ export const links = {
   "Lyam Gabel": "https://lyambgabel.com/",
   "Justy Kosek": "https://www.justykosek.com/",
   "Steven Carinci": "https://www.mandy.com/u/steven-carinci/",
+  "Magda S. Nyiri": "https://www.broadwayworld.com/people/Magda-S-Nyiri/",
   "Theatre for a New Audience": "https://www.tfana.org/",
   "Oregon Shakespeare Festival": "https://www.osfashland.org/",
   OSF: "https://www.osfashland.org/",
