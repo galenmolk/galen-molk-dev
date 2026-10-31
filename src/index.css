@@ -7,8 +7,7 @@
   --accent: #6f9fff;
   --visited: #b39ddb;
   --focus: #6f9fff;
-  --serif: "Source Serif 4", Charter, "Iowan Old Style", Georgia, serif;
-  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: Charter, "Bitstream Charter", Georgia, serif;
   --s1: .25rem; --s2: .5rem; --s3: 1rem; --s4: 1.5rem;
   --s5: 2rem;   --s6: 3rem;  --s7: 4rem; --s8: 6rem;
   --measure: 46rem;
@@ -50,7 +49,7 @@ a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; 
 a:visited:not(.quiet) { color: var(--visited); }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
 
-.meta, figcaption { font: .875rem/1.5 var(--sans); color: var(--muted); }
+.meta, figcaption { font: .9375rem/1.5 var(--serif); color: var(--muted); }
 
 img { display: block; max-width: 100%; height: auto; }
 
@@ -81,7 +80,7 @@ ul { list-style: none; margin: 0; padding: 0; }
   flex-wrap: wrap;
   gap: var(--s1) var(--s3);
   margin-top: var(--s3);
-  font: .9375rem/1.5 var(--sans);
+  font: .9375rem/1.5 var(--serif);
 }
 
 @media (max-width: 30rem) {
@@ -177,7 +176,7 @@ a.quiet:hover { text-decoration-color: currentColor; }
 }
 .credits td:first-child { font-style: italic; }
 .training td:first-child { font-style: normal; color: var(--text); }
-.credits .note { font: .8125rem var(--sans); font-style: normal; color: var(--muted); }
+.credits .note { font: .875rem var(--serif); font-style: normal; color: var(--muted); }
 .credits td:not(:first-child) { color: var(--muted); }
 @media (max-width: 40rem) {
   .credits, .credits caption, .credits tbody { display: block; }
