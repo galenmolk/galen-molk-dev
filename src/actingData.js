@@ -18,6 +18,7 @@ export const links = {
   OSF: "https://www.osfashland.org/",
   Bedlam: "https://bedlam.org/",
   "Theatre Row": "https://bfany.org/theatre-row/",
+  "John Cullum Theatre": "https://www.broadwayworld.com/off-off-broadway/regionalshows/JOHN-CULLUM-THEATRE",
   "Bedlam TV": "https://bedlam.org/",
 };
 
