@@ -200,11 +200,8 @@ a.quiet:hover { text-decoration-color: currentColor; }
 
 /* Footer */
 
-.site-footer { margin-top: var(--s8); }
-.treeline {
-  height: 12px;
-  background-repeat: repeat-x;
-  background-position: left bottom;
-  background-size: auto 12px;
+.site-footer {
+  margin-top: var(--s8);
+  border-top: 1px solid var(--rule);
 }
 .site-footer p { margin-top: var(--s4); }

@@ -1,5 +1,3 @@
-import { asset } from "../site";
-
 export const ExternalLink = ({ href, children }) => {
   const external = /^https?:/.test(href);
   return (
@@ -21,11 +19,6 @@ export const LinkRow = ({ links }) => (
 
 export const Footer = ({ children }) => (
   <footer className="site-footer">
-    <div
-      className="treeline"
-      role="presentation"
-      style={{ backgroundImage: `url(${asset("treeline.svg")})` }}
-    />
     {children && <p className="meta">{children}</p>}
   </footer>
 );
