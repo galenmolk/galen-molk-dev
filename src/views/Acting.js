@@ -108,9 +108,9 @@ const Acting = () => (
 
 
       <h2>Credits</h2>
+      <CreditTable caption="Film" rows={credits.film} />
       <CreditTable caption="Theatre" rows={credits.theatre} />
       <CreditTable caption="Staged readings" rows={credits.readings} />
-      <CreditTable caption="Film" rows={credits.film} />
       <CreditTable caption="Television" rows={credits.tv} />
 
       <h2>Production photos</h2>
