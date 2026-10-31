@@ -5,7 +5,6 @@ import {
   links,
   recent,
   resume,
-  skills,
   training,
   upcoming,
   upcomingIsOpen,
@@ -127,8 +126,6 @@ const Acting = () => (
         </tbody>
       </table>
 
-      <h2>Skills</h2>
-      <p>{skills}</p>
 
       <h2>Production photos</h2>
       <div className="gallery">

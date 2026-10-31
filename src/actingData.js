@@ -83,8 +83,6 @@ export const training = [
   ["Singing", "Madeline Abel-Kerns"],
 ];
 
-export const skills =
-  "Xaphoon, guitar, piano, singer-songwriter (folk), street skateboarding, dialects (Dublin, Alabama, London and more), horseback riding, stage combat, video editing.";
 
 export const recent = {
   title: "Get the Picture",
