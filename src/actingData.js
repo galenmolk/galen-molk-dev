@@ -8,9 +8,8 @@ export const resume = "media/acting/galen-molk-resume.pdf";
 
 export const credits = {
   theatre: [
-    { production: "Julius Caesar", role: "Cinna the Poet", company: "Theatre for a New Audience, OSF", director: "Shana Cooper" },
+    { production: "Julius Caesar", role: "Cinna the Poet", company: "Theatre for a New Audience & OSF", director: "Shana Cooper" },
     { production: "The Odyssey", role: "Elpenor", company: "Oregon Shakespeare Festival", director: "Mary Zimmerman" },
-    { production: "The Crucible", role: "Cheever", company: "Bedlam", director: "Eric Tucker", note: "cancelled due to COVID-19" },
     { production: "The Exes", role: "Garrett Wright", company: "Theatre Row", director: "Magda S. Nyiri" },
     { production: "King John", role: "Hubert", company: "John Cullum Theatre", director: "James Jennings" },
     { production: "The Comedian's Tragedy", role: "The Messenger", company: "Access Theater", director: "Matthew Amendt" },
@@ -20,8 +19,7 @@ export const credits = {
     { production: "To Live in Peace", role: "The Drunk", company: "Theater for the New City", director: "Claudine Brantley" },
     { production: "An Act of God", role: "Michael", company: "Millbrook Playhouse", director: "Adam Knight" },
     { production: "Footlight Frenzy", role: "Benny Dibble", company: "Millbrook Playhouse", director: "Nick Brennan" },
-    { production: "A Sketch of New York", role: "John", company: "Producers' Club", director: "Joe DiNozzi" },
-    { production: "The Diary of Anne Frank", role: "Mr. Kraler", company: "Very Little Theatre", director: "Theresa May", note: "upcoming" },
+    { production: "The Diary of Anne Frank", role: "Mr. Kraler", company: "The Very Little Theatre", director: "Theresa May" },
   ],
   readings: [
     { production: "Richard II", role: "Mowbray, Green", company: "Bedlam", director: "Zachary Elkind" },
@@ -32,13 +30,19 @@ export const credits = {
     { production: "Against the Wall", role: "Leo", company: "Playwrights Horizons", director: "Justy Kosek" },
     { production: "Baby Blue", role: "Verne", company: "Westchester Collaborative Theater", director: "Steven Carinci" },
   ],
-  screen: [
-    { production: "Bedlam: The Series", role: "Fenton", company: "Bedlam", director: "Eric Tucker" },
-    { production: "Eighty-12", role: "Lead", company: "Amazon Prime Video", director: "Louis Rocky Bacigalupo" },
-    { production: "WTF Am I Doing", role: "Lead", company: "4 The Fans Productions", director: "Anthony Jones" },
-    { production: "What Brings Us Together", role: "Supporting", company: "NYC Indie Film Festival", director: "Jeff Musillo" },
-    { production: "Super 180s", role: "Chris", company: "Columbia University", director: "Joshua Kellerman" },
-    { production: "The Orange Cheddar Debacle", role: "Lead", company: "Ben Gunn Entertainment", director: "Forrest Fenske" },
+  film: [
+    { production: "Get the Picture", role: "Lead", director: "Jeff Musillo" },
+    { production: "WTF Am I Doing", role: "Lead", company: "4 the Fans Productions", director: "Anthony Jones" },
+    { production: "What Brings Us Together", role: "Supporting", director: "Jeff Musillo" },
+    { production: "Super 180s", role: "Lead", director: "Joshua Kellerman" },
+    { production: "Shadows of the Soul", role: "Lead", company: "TMD Media", director: "Joseph Latimore" },
+    { production: "Ode to Psyche", role: "Supporting", director: "Alex Morf" },
+    { production: "When the Boys Walk In", role: "Lead", company: "ROW 211 Films", director: "Daniel Rester" },
+    { production: "The Orange Cheddar Debacle", role: "Lead", company: "Fast Boat", director: "Forrest Fenske" },
+  ],
+  tv: [
+    { production: "Eighty-12", role: "Series Regular", company: "Amazon Prime", director: "Louis Rocky Bacigalupo" },
+    { production: "Bedlam: The Series", role: "Co-Star", company: "Bedlam TV", director: "Eric Tucker" },
   ],
 };
 
@@ -57,4 +61,15 @@ export const gallery = [
   { src: "gm12.webp", caption: "The Orange Cheddar Debacle" },
 ].map((g) => ({ ...g, src: `media/acting/gallery/${g.src}` }));
 
-export const training = "BFA in Theatre Arts, Southern Oregon University, summa cum laude.";
+export const training = [
+  ["BFA, Theatre Arts", "Southern Oregon University, summa cum laude"],
+  ["Acting", "Jackie Apodaca, Jim Edmondson, Scott Kaiser, Jonathan Drahos"],
+  ["On-camera", "Heidi Marshall, Terri McMahon, Greg Eliason"],
+  ["Movement, clown, mask, devised", "James Donlon"],
+  ["Stage combat (broadsword, hand-to-hand)", "U. Jonathan Toppo"],
+  ["Voice, dialects, IPA", "Kaitlin Henderson, Rebecca Clark Carey"],
+  ["Singing", "Madeline Abel-Kerns"],
+];
+
+export const skills =
+  "Xaphoon, guitar, piano, singer-songwriter (folk), street skateboarding, dialects (Dublin, Alabama, London and more), horseback riding, stage combat, video editing.";
