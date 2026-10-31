@@ -2,6 +2,7 @@ import {
   credits,
   gallery,
   headshot,
+  people,
   recent,
   resume,
   skills,
@@ -11,6 +12,9 @@ import {
 } from "../actingData";
 import { asset, email } from "../site";
 import { ExternalLink, Footer, LinkRow } from "./Shared";
+
+const Director = ({ name }) =>
+  people[name] ? <ExternalLink href={people[name]}>{name}</ExternalLink> : name;
 
 const CreditTable = ({ caption, rows }) => (
   <table className="credits">
@@ -24,7 +28,9 @@ const CreditTable = ({ caption, rows }) => (
           </td>
           <td>{c.role}</td>
           <td>{c.company}</td>
-          <td>dir. {c.director}</td>
+          <td>
+            dir. <Director name={c.director} />
+          </td>
         </tr>
       ))}
     </tbody>
@@ -58,7 +64,9 @@ const Acting = () => (
           <iframe src={recent.src} title={`${recent.title} (short film)`} allow="fullscreen; picture-in-picture" allowFullScreen />
         </div>
         <h3>{recent.title}</h3>
-        <p className="meta">{recent.meta}</p>
+        <p className="meta">
+          {recent.meta} · dir. <Director name={recent.director} />
+        </p>
         <p>{recent.logline}</p>
         <p className="meta">
           <ExternalLink href={recent.url}>Watch on Vimeo</ExternalLink>
@@ -71,7 +79,7 @@ const Acting = () => (
           <section className="feature">
             <h3>{upcoming.production}</h3>
             <p className="meta">
-              {upcoming.role} · {upcoming.company} · dir. {upcoming.director}
+              {upcoming.role} · {upcoming.company} · dir. <Director name={upcoming.director} />
               <br />
               {upcoming.dates}
             </p>

@@ -1,6 +1,11 @@
 export const headshot = "media/acting/galen-molk-headshot.webp";
 export const resume = "media/acting/galen-molk-resume.pdf";
 
+// Names listed here render as links wherever they appear as a director.
+export const people = {
+  "Jeff Musillo": "https://www.imdb.com/name/nm2298002/",
+};
+
 const baseCredits = {
   theatre: [
     { production: "Julius Caesar", role: "Cinna the Poet", company: "Theatre for a New Audience & OSF", director: "Shana Cooper" },
@@ -70,7 +75,8 @@ export const skills =
 
 export const recent = {
   title: "Get the Picture",
-  meta: "Short film · 2025 · 10 min · Lead · dir. Jeff Musillo",
+  meta: "Short film · 2025 · 10 min · Lead",
+  director: "Jeff Musillo",
   logline:
     "When a celebrated actor becomes consumed by body dysmorphia, a chance encounter with a fan pushes him into a psychological spiral, blurring the lines between his real life and the violent role he's playing.",
   src: "https://player.vimeo.com/video/1114953356?byline=0&portrait=0&title=0&dnt=1",
