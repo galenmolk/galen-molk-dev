@@ -1,4 +1,4 @@
-import { credits, gallery, headshot, reel, resume } from "../actingData";
+import { credits, gallery, headshot, reel, resume, training } from "../actingData";
 import { asset, email } from "../site";
 import { Footer, LinkRow } from "./Shared";
 
@@ -8,7 +8,10 @@ const CreditTable = ({ caption, rows }) => (
     <tbody>
       {rows.map((c) => (
         <tr key={c.production}>
-          <td>{c.production}</td>
+          <td>
+            {c.production}
+            {c.note && <span className="note"> ({c.note})</span>}
+          </td>
           <td>{c.role}</td>
           <td>{c.company}</td>
           <td>dir. {c.director}</td>
@@ -46,7 +49,11 @@ const Acting = () => (
 
       <h2>Credits</h2>
       <CreditTable caption="Theatre" rows={credits.theatre} />
+      <CreditTable caption="Staged readings" rows={credits.readings} />
       <CreditTable caption="Film and television" rows={credits.screen} />
+
+      <h2>Training</h2>
+      <p>{training}</p>
 
       <h2>Production photos</h2>
       <div className="gallery">
