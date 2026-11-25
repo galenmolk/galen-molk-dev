@@ -33,6 +33,7 @@ const CreditTable = ({ caption, rows }) => (
     <table className="credits">
       <tbody>
         {rows.map((c) => (
+          c.hidden !== true ? 
           <tr key={c.production}>
             <td>
               {c.production}
@@ -45,7 +46,7 @@ const CreditTable = ({ caption, rows }) => (
             <td>
               dir. <Linked text={c.director} />
             </td>
-          </tr>
+          </tr> : null
         ))}
       </tbody>
     </table>
